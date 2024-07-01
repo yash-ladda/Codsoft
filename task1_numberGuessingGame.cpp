@@ -13,7 +13,22 @@ int main() {
 
     int random = minLimit + (rand() % range); // Generating random number between range
 
-    
+    int guess;
+    cout << "Guess the random number: " << endl;
+    cin >> guess;  // Taking a number from a user as a guess
+
+    while (guess != random) {
+        if (guess < random) {
+            cout << "Try again! Guess is too low." << endl;
+        } else {
+            cout << "Try again! Guess is too high." << endl;
+        }
+        cout << "Guess the random number: " << endl;
+        cin >> guess;
+    }  // Code to deal with the situation when guessed number is not equal to random number
+
+    cout << "Congratulations! You guessed the number correctly." << endl; // Till here the number is guessed correctly.
+
 
     return 0;
 }
