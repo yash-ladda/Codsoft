@@ -29,6 +29,5 @@ int main() {
 
     cout << "Congratulations! You guessed the number correctly." << endl; // Till here the number is guessed correctly.
 
-
     return 0;
 }
